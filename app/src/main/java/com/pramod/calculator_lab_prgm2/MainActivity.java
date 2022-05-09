@@ -4,12 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-
-import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText number1, number2;
@@ -31,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append("1");
         } else if (number2.hasFocus()) {
             number2.append("1");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -41,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append("2");
         } else if (number2.hasFocus()) {
             number2.append("2");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -51,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append("3");
         } else if (number2.hasFocus()) {
             number2.append("3");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -61,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append("4");
         } else if (number2.hasFocus()) {
             number2.append("4");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -71,8 +60,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append("5");
         } else if (number2.hasFocus()) {
             number2.append("5");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -81,8 +68,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append("6");
         } else if (number2.hasFocus()) {
             number2.append("6");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -91,8 +76,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append("7");
         } else if (number2.hasFocus()) {
             number2.append("7");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -101,8 +84,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append("8");
         } else if (number2.hasFocus()) {
             number2.append("8");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -111,8 +92,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append("9");
         } else if (number2.hasFocus()) {
             number2.append("9");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -121,8 +100,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append("0");
         } else if (number2.hasFocus()) {
             number2.append("0");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -131,8 +108,6 @@ public class MainActivity extends AppCompatActivity {
             number1.append(".");
         } else if (number2.hasFocus()) {
             number2.append(".");
-        } else {
-            Toast.makeText(this, "please get the focus of First/Second Number field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -152,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         op = '/';
     }
 
-    @SuppressLint("SetTextI18n")
+
     public void compute(View v) {
         float n1, n2, r;
         switch (op) {
@@ -197,8 +172,6 @@ public class MainActivity extends AppCompatActivity {
         } else if (number2.hasFocus()) {
             number2.setText("");
             res.setText("");
-        } else {
-            Toast.makeText(this, "please click on Number1/Number2 field", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -213,12 +186,8 @@ public class MainActivity extends AppCompatActivity {
             n = number2.getText().toString();
             n = n.substring(0, n.length() - 1);
             number2.setText(n);
-        } else {
-            Toast.makeText(this, "please click on Number1/Number2 Field", Toast.LENGTH_LONG).show();
         }
     }
 
-    public void show_toast(View v) {
-        Toast.makeText(this, "please click on Number1/Number2 Field", Toast.LENGTH_LONG).show();
-    }
+
 }

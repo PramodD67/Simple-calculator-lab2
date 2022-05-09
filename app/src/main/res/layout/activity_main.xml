@@ -257,13 +257,6 @@
             android:onClick="All_clear"
             />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="show toast"
-            android:onClick="show_toast"
-            />
-
     </LinearLayout>
 
 </LinearLayout>
